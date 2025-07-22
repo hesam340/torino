@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Torino | اپلیکیشن رزرو آنلاین تور و هتل :
 
-## Getting Started
+تورینو یک وبسایت رزرو تور و هتل است که کاربران می‌توانند تورهای مختلف را بررسی، رزرو و مدیریت کنند. این پروژه در بوت‌کمپ بوتواستارت و با استفاده از تکنولوژی‌های مدرن پیاده‌سازی شده است.
 
-First, run the development server:
+Turino is a tour and hotel booking website where users can explore, book, and manage various tours.
+
+this project is a practical application for management the products that is coded by **_next.js v14 (AppRouter)_**
+
+## abilities :
+
+- ability to **add new product**
+- ability to **edit an existing product**
+- ability to **validate product's information** like price while adding or editing contact by **yup** library and management of forms by **react hook form**
+- ability to **delete one product** or **group delete**
+- ability to **search** product based on name of products
+- ability to **search** products based on a **range of products' price** -**authentication**:save user's information in localServer that the name of repository is warehouse-app and validation of their informations with yup and react-hook-form. -**authorization**: the ability of user to access to auth page and using of main buttons is possible just when they have token
+- queries are set in url with useRouter hook
+
+## built with(تکنولوژی ها و ابزار های استفاده شده) :
+
+-[next.js 14](https://nextjs.org/) -[react-hook-form](https://react-hook-form.com/) -[yup](https://github.com/jquense/yup) -[react-icons](https://react-icons.github.io/react-icons/)-[react-toastify](https://www.npmjs.com/package/react-toastify)-[axios](https://www.axios.com/)-[React.js](https://react.dev/)-[Tailwind-Css](https://tailwindcss.com/)-[React-Query](https://tanstack.com/)-[react-multi-date-picker](https://shahabyazdi.github.io/react-multi-date-picker/)-[react-loader-spinner](https://mhnpd.github.io/react-loader-spinner/)-[react-otp-input](https://github.com/devfolioco/react-otp-input)
+
+## install and run(روش اجرا و نصب پروژه) :
 
 ```bash
+git clone https://github.com/hesam340/store-app-next.js-v13-
+cd store-app
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**run server**:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+git clone https://github.com/hesam340/warehouse-app.git
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## screenShot :
 
-## Learn More
+[store-app-demo](./public/screenShot.PNG)
 
-To learn more about Next.js, take a look at the following resources:
+## createdBy :
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**hesam khaki by ❤️**

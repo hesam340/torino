@@ -4,14 +4,20 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/ui/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
+      fontFamily: {
+        yekan: [`var(--font-yekan)`],
+        vazir: [`var(--font-vazir)`],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#28A745",
+        secondary: "#10411B",
+        complementry: "#009ECA",
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
