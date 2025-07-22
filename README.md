@@ -8,13 +8,14 @@ this project is a practical application for management the products that is code
 
 ## abilities :
 
-- ability to **add new product**
-- ability to **edit an existing product**
-- ability to **validate product's information** like price while adding or editing contact by **yup** library and management of forms by **react hook form**
-- ability to **delete one product** or **group delete**
-- ability to **search** product based on name of products
-- ability to **search** products based on a **range of products' price** -**authentication**:save user's information in localServer that the name of repository is warehouse-app and validation of their informations with yup and react-hook-form. -**authorization**: the ability of user to access to auth page and using of main buttons is possible just when they have token
-- queries are set in url with useRouter hook
+-**authentication**:save user's information in localServer that the name of repository is torino-server and validation of their informations with yup and react-hook-form. / شناسایی و ذخیره اطلاعات کاربر در لوکال سرور و اختصاص **jwt** به هر کاربر پس از ثبت نام و اعتبار سنجی اطلاعات وارد شده
+-**authorization**: the ability of user to access to auth page and using of main buttons is possible just when they have token / **بررسی جواز** کاربر برای رفتن به صفحاتی که نیاز به مجوز یا توکن دارند
+- ability to **Buy New Tours** / امکان دیدن جزئیات تور و **خرید**
+- ability to **Edit user's profile information** / امکان **ویرایش اطلاعات شخصی کاربر**
+- ability to **validate user's information** like forms for getting user's information by **yup** library and management of forms by **react hook form** / **اعتبار سنجی** اطلاعات وارد شده به وسیله کاربر در فرم های مخصوص گرفتن اطلاعات کاربر با **yup** و **react-hook-form**
+- ability to **search** tours based on origin and destination and calendar / صفحه **جستجوی تور** با قابلیت پیشرفته
+- **Profile dashboard** with management of reservations and transactions / **داشبورد پروفایل** با مدیریت رزرو ها و تراکنش ها
+- **Responsive** user interface / رابط کاربری **ریسپانسیو**
 
 ## built with(تکنولوژی ها و ابزار های استفاده شده) :
 
@@ -23,22 +24,25 @@ this project is a practical application for management the products that is code
 ## install and run(روش اجرا و نصب پروژه) :
 
 ```bash
-git clone https://github.com/hesam340/store-app-next.js-v13-
-cd store-app
+git clone https://github.com/hesam340/torino
+npm install
 npm run dev
 ```
 
 **run server**:
 
 ```bash
-git clone https://github.com/hesam340/warehouse-app.git
+git clone https://github.com/hesam340/torino-server
 npm start
 ```
 
 ## screenShot :
 
-[store-app-demo](./public/screenShot.PNG)
+[store-app-demo](./public/images/screenShot.PNG)
 
 ## createdBy :
+
+**email : hesamkhaki340@gmail.com**
+**instagram : hesam340**
 
 **hesam khaki by ❤️**

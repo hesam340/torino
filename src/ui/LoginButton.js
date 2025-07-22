@@ -24,7 +24,7 @@ function LoginButton() {
   const queryClient = useQueryClient();
 
   if (error && error?.status !== 401) {
-    router.push("/my-error");
+    router.push("/");
   }
 
   const logOutHandler = () => {

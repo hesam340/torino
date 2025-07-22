@@ -8,7 +8,7 @@ import DatePicker from "react-multi-date-picker";
 import persian from "react-date-object/calendars/persian";
 import persian_fa from "react-date-object/locales/persian_fa";
 
-function CustomDatePicker({ control, user }) {
+function CustomDatePicker({ control, user, profile }) {
   const [focused, setFocused] = useState(false);
 
   return (
@@ -42,7 +42,7 @@ function CustomDatePicker({ control, user }) {
                       .add(2, "years")
                       .format()
               }
-              onChange={(e) => onChange(e)}
+              onChange={(e) => profile ? new Date(e).getTime() : onChange(e)}
               currentDate={
                 user &&
                 new DateObject({ calendar: persian })

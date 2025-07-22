@@ -42,7 +42,7 @@ function PrivateUserInfo({ data, formHandler }) {
               <PassengerInput name="nationalCode" control={control} />
             </div>
             <div className="relative w-full order-5 lg:order-5 lg:basis-[28%] lg:flex-1 lg:mb-3">
-              <CustomDatePicker control={control} user={true} />
+              <CustomDatePicker control={control} user={true} profile={true} />
             </div>
             <div className="order-6 lg:order-6 w-full">
               <span className="hidden lg:block -mx-6 h-px bg-[#00000033]"></span>

@@ -36,7 +36,7 @@ function Card({ data, index }) {
             >
               {title}
             </Link>
-            <p className="text-[15px] font-light md:font-normal text-[#282828B2] mb-2 px-2">
+            <p className="text-sm font-light md:font-normal text-[#282828B2] mb-2 px-2">
               {getShamsiFromMiladi(startDate)} ماه .{" "}
               {e2p(stayingDays(startDate, endDate))} روزه -{" "}
               {engVehicleToFarsi(fleetVehicle)} - {options[0].slice(0, 5)} ...
