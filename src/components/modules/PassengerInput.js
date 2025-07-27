@@ -45,8 +45,7 @@ function PassengerInput({ control, name, showGender, setShowGender }) {
                   (name === "nationalCode" ||
                     name === "payment.shaba_code" ||
                     name === "payment.debitCard_code" ||
-                    name === "payment.accountIdentifier") &&
-                  "numeric"
+                    name === "payment.accountIdentifier") ? "numeric" : null
                 }
                 onFocus={name === "gender" ? () => setShowGender(true) : null}
                 onBlur={() => {

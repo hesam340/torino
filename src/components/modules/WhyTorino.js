@@ -13,6 +13,7 @@ function WhyTorino() {
                 src="/SVGs/Polygon.svg"
                 fill
                 className="object-fill"
+                sizes="36px"
                 alt="why-torino"
               />
               <span className="absolute flex justify-center items-center text-2xl inset-0 text-white top-1">
@@ -34,6 +35,7 @@ function WhyTorino() {
                 <Image
                   src="/SVGs/Polygon-circle.svg"
                   fill
+                  sizes="36px"
                   className="object-fill"
                   alt="why-torino"
                 />

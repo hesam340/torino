@@ -36,13 +36,13 @@ git clone https://github.com/hesam340/torino-server
 npm start
 ```
 
-## screenShot :
+## screenShot(دموی پروژه) :
 
 [store-app-demo](./public/images/screenShot.PNG)
 
-## createdBy :
+## createdBy(ساخته شده توسط) :
 
 **email : hesamkhaki340@gmail.com**
-**instagram : hesam340**
+**instagram : (https://www.instagram.com/hesam340/)**
 
 **hesam khaki by ❤️**

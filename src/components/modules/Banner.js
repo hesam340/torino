@@ -6,6 +6,7 @@ function Banner() {
       <Image
         src="/images/banner.webp"
         fill
+        sizes="100vw"
         alt="banner"
         className="object-fill"
         priority={true}

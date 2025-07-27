@@ -28,7 +28,7 @@ function SendOtpPage({
     const { res, error } = await sendOtp(data.mobile);
     setIsLoading(false);
     setUserMobile(data.mobile);
-
+    
     if (res) setStep(2);
     if (error) toast.error(error.message);
   };

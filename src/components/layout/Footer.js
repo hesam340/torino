@@ -16,7 +16,7 @@ function Footer() {
           borderImage:
             "repeating-linear-gradient(to right, #00000040 0, #00000040 10px, transparent 4px, transparent 20px)",
           borderImageSlice: 1,
-        }}
+        }}        
       ></span>
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="grid grid-cols-2 mb-6 gap-10 md:gap-0">
@@ -57,6 +57,7 @@ function Footer() {
                   <Image
                     src={image.src}
                     fill
+                    sizes="(max-width: 768px) 36px, (max-width: 1024px) 56px, 70px"
                     className="object-fill"
                     alt={image.alt}
                   />
@@ -70,6 +71,7 @@ function Footer() {
                 <Image
                   src="/SVGs/Torino-logo.svg"
                   fill
+                  sizes="(max-width: 768px) 100px, (max-width: 1024px) 146px, 146px"
                   className="object-fill"
                   alt="Torino-logo"
                 />

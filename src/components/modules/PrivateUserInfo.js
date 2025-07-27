@@ -106,7 +106,7 @@ function PrivateUserInfo({ data, formHandler }) {
             <div className="flex items-center justify-between md:w-[47%] mt-4">
               <p className="text-base font-light">تاریخ تولد</p>
               <p className="text-base font-medium">
-                {new Date(data.birthDate).toLocaleDateString("fa-IR")}
+                {data?.birthDate ? new Date(+data.birthDate).toLocaleDateString("fa-IR") : "-"}
               </p>
             </div>
           </div>

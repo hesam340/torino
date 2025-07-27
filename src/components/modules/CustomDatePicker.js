@@ -42,11 +42,17 @@ function CustomDatePicker({ control, user, profile }) {
                       .add(2, "years")
                       .format()
               }
-              onChange={(e) => profile ? new Date(e).getTime() : onChange(e)}
+              onChange={(e) => {
+                if (profile) {
+                  const time = new Date(e).getTime();
+                  onChange(time);
+                } else {
+                  onChange(e);
+                }
+              }}
               currentDate={
                 user &&
-                new DateObject({ calendar: persian })
-                  .subtract(18, "years")
+                new DateObject({ calendar: persian }).subtract(18, "years")
               }
               editable={false}
               calendarPosition={user ? "bottom-right" : "bottom-center"}
@@ -67,9 +73,8 @@ function CustomDatePicker({ control, user, profile }) {
               <label
                 htmlFor="birthDate"
                 className={`absolute w-fit right-0 bg-white -translate-x-1 transition-all duration-200 flex items-center gap-1 px-1 pointer-events-none top-2 text-[20px] text-[#00000080] font-light lg:font-normal ${
-            (focused || (value && value !== "")) &&
-            "labelFloating"
-          }`}
+                  (focused || (value && value !== "")) && "labelFloating"
+                }`}
               >
                 <div className="w-[18px] h-[18px] ml-1 text-[#808080]">
                   <LuCalendarDays />

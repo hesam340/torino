@@ -9,14 +9,14 @@ function SendButton({ error, value, code, check, errorMessage, isLoading }) {
         (
           check
             ? code.length !== 6 || errorMessage || isLoading
-            : error || !value
+            : error || !value || isLoading
         )
           ? `opacity-60 hover:cursor-not-allowed`
           : `hover:bg-secondary transition-all duration-[0.2s]`
       }`}
       type="submit"
       disabled={
-        check ? code.length !== 6 || errorMessage || isLoading : error || !value
+        check ? code.length !== 6 || errorMessage || isLoading : error || !value || isLoading
       }
     >
       {isLoading ? (

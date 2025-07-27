@@ -18,6 +18,7 @@ function CartoonPart() {
           <Image
             src="/images/cartoon-homePage.webp"
             fill
+            sizes="(max-width: 768px) 195px,(max-width: 1024px) 248px,308px"
             className="object-fill"
             alt="cartoon-image"
           />

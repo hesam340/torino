@@ -18,5 +18,5 @@ export const userSchema = object({
     )
     .trim(),
   gender: string().trim().required("جنسیت را وارد کنید"),
-  birthDate: object().required("تاریخ تولد را وارد کنید"),
+  birthDate: string().required("تاریخ تولد را وارد کنید"),
 });

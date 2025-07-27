@@ -92,7 +92,7 @@ export const profileSchema = object({
       return ["female", "male"].includes(value);
     })
     .trim(),
-  birthDate: object(),
+  birthDate: string().nullable().notRequired(),
   payment: object({
     shaba_code: string()
       .nullable()

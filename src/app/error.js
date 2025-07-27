@@ -9,6 +9,7 @@ function Error({ error, reset }) {
         <Image
           src="/images/Error-Lamp-Robot.webp"
           fill
+          sizes="(max-width: 768px) 322px, (max-width: 1024px) 450px, 555px"
           className="object-fill"
           alt="Error-Icon"
           priority={true}

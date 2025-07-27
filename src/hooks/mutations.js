@@ -7,16 +7,11 @@ import { addBasket, orderTour } from "@/services/tour";
 
 const useAddBasket = () => {
   const queryClient = useQueryClient();
-  const router = useRouter();
   const mutationFn = (id) => addBasket(id);
   return useMutation({
     mutationFn,
     onSuccess: () => {
       queryClient.invalidateQueries(["basket"]);
-      router.push("/basket");
-    },
-    onError: () => {
-      router.push("/my-error");
     },
   });
 };

@@ -9,6 +9,7 @@
       "@/modules/*": ["src/components/modules/*"],
       "@/skeletons/*": ["src/components/skeletons/*"],
       "@/layout/*": ["src/components/layout/*"],
+      "@/ui/*": ["src/components/ui/*"],
       "@/images/*": ["public/images/*"],
       "@/SVGs/*": ["public/SVGs/*"],
       "@/validation/*": ["src/validation/*"],
@@ -16,7 +17,6 @@
       "@/providers/*": ["src/providers/*"],
       "@/hooks/*": ["src/hooks/*"],
       "@/services/*": ["src/services/*"],
-      "@/ui/*": ["src/ui/*"],
       "@/constants/*": ["src/constants/*"]
     }
   }

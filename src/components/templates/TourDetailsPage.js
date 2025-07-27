@@ -37,6 +37,7 @@ function TourDetailsPage({ tour }) {
             <Image
               src={image}
               fill
+              sizes="(max-width: 768px) 330px, (max-width: 1024px) 397px, 397px"
               className="object-fill rounded-xl mt-5 md:mt-0"
               alt={title}
               priority={true}

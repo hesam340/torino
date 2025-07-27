@@ -1,10 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
-import { DateObject } from "react-multi-date-picker";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { FormProvider, useForm } from "react-hook-form";
-import persian from "react-date-object/calendars/persian";
 
 import { useProfile } from "@/hooks/queries";
 import { useEditProfile } from "@/hooks/mutations";
@@ -18,13 +16,6 @@ function ProfilePage() {
   const { data, isPending } = useProfile();
   const { mutate } = useEditProfile();
 
-  const birthDate = data?.birthDate
-    ? new DateObject({
-        date: new Date(data.birthDate),
-        calendar: persian,
-      })
-    : {};
-
   const methods = useForm({
     resolver: yupResolver(profileSchema),
     mode: "onBlur",
@@ -33,7 +24,7 @@ function ProfilePage() {
       firstName: data?.firstName || "",
       lastName: data?.lastName || "",
       nationalCode: "",
-      birthDate: birthDate,
+      birthDate: "",
       gender: "",
       payment: {
         shaba_code: "",
@@ -50,7 +41,7 @@ function ProfilePage() {
         firstName: data.firstName || "",
         lastName: data.lastName || "",
         nationalCode: data.nationalCode || "",
-        birthDate: birthDate || {},
+        birthDate: new Date(+data.birthDate).toLocaleDateString("fa-IR") || "",
         gender: data.gender || "",
         payment: {
           shaba_code: data?.payment?.shaba_code || "",
@@ -64,7 +55,6 @@ function ProfilePage() {
   const formHandler = (formData) => {
     const newData = {
       ...formData,
-      birthDate,
       payment: {
         shaba_code: formData?.payment?.shaba_code || "",
         debitCard_code: formData?.payment?.debitCard_code || "",

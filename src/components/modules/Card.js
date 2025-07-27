@@ -21,7 +21,8 @@ function Card({ data, index }) {
             <div className="relative w-full h-[159px]">
               <Image
                 src={image}
-                fill={true}
+                fill
+                sizes="(max-width: 768px) 327px, 278px"
                 className="object-fill"
                 alt={title}
                 priority={index < 4 ? true : false}

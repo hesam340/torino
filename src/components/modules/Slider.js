@@ -88,6 +88,7 @@ function Slider() {
               <Image
                 src={image.src}
                 fill
+                sizes="(max-width: 768px) 255px, (max-width: 1024px) 298px, 389px"
                 className="object-cover rounded-[35px]"
                 alt={image.id}
               />
@@ -103,9 +104,9 @@ function Slider() {
         >
           <GoArrowRight size={24} color="#10411B" />
         </button>
-        <sapn className="font-vazir">
+        <span className="font-vazir">
           {e2p(images[0].id)}/{e2p(images.length)}
-        </sapn>
+        </span>
         <button
           onClick={prevHandler}
           disabled={images[0].id === "1"}
